@@ -68,7 +68,7 @@
 			<a class="popClose" href="#" style="text-decoration: none; cursor: pointer;">❌</a>
 			<div class="popContent">
 				<h2 class="popTitle">Добавить материал</h2>
-				<form action="send.php" method="POST" enctype="multipart/form-data">
+				<form action="php/send.php" method="POST" enctype="multipart/form-data">
 					<div class="formItem">
 						<input placeholder="Имя" type="text" name="name" class="textInput" required/>
 					</div>
