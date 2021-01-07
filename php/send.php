@@ -5,13 +5,13 @@ $name = $_POST['name'];
 $surname = $_POST['surname'];
 $message = $_POST['message'];
 $showName = $_POST['showName'];
-$photo = $_POST['photo'];
+// $photo = $_POST['photo'];
 
-echo($name);
-echo($surname);
-echo($message);
-echo($showName);
-echo($photo);
+echo($name"\n");
+echo($surname"\n");
+echo($message"\n");
+echo($showName"\n");
+// echo($photo);
 
 
 ?>
@@ -24,8 +24,8 @@ echo($photo);
 	<title>Форма отправлена</title>
 	<meta name="generator">
 	<script type="text/javascript">
-	setTimeout('location.replace("/index.php")', 10000);
-	/*Изменить текущий адрес страницы через 3 секунды (3000 миллисекунд)*/
+	setTimeout('location.replace("../index.php")', 10000);
+	/*Изменить текущий адрес страницы через 10 секунд*/
 	</script> 
 	</head>
 	<body>
