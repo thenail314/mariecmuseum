@@ -1,25 +1,57 @@
 <?php
 
+require_once '/PHPMailer/PHPMailerAutoload.php';
+ 
+$mail = new PHPMailer;
+$mail->CharSet = 'UTF-8';
+ 
+// Настройки SMTP
+$mail->isSMTP();
+$mail->SMTPAuth = true;
+$mail->SMTPDebug = 0;
+ 
+$mail->Host = 'ssl://smtp.yandex.ru';
+$mail->Port = 465;
+$mail->Username = 'mariecmuseum@yandex.ru';
+$mail->Password = 'P1ssw0rD';
+ 
+// От кого
+$mail->setFrom('mariecmuseum@yandex.ru', 'mariecmuseum');		
+ 
+// Кому
+$mail->addAddress('thenail314@yandex.ru', 'Наиль Набиев');
+ 
+// Тема письма
+$mail->Subject = $subject;
+ 
+// Тело письма
+$body = '<p><strong>«Hello, world!» </strong></p>';
+$mail->msgHTML($body);
+ 
+// Приложение
+$mail->addAttachment(__DIR__ . '/image.jpg');
+ 
+$mail->send();
 
-$name = $_POST['name'];
-$surname = $_POST['surname'];
-$message = $_POST['message'];
-$showName = $_POST['showName'];
-// $photo = $_POST['photo'];
+// $name = $_POST['name'];
+// $surname = $_POST['surname'];
+// $message = $_POST['message'];
+// $showName = $_POST['showName'];
+// // $photo = $_POST['photo'];
 
-echo($name);
-echo "<br>";
-echo($surname);
-echo "<br>";
-echo($message);
-echo "<br>";
-echo($showName);
-// echo($photo);
+// echo($name);
+// echo "<br>";
+// echo($surname);
+// echo "<br>";
+// echo($message);
+// echo "<br>";
+// echo($showName);
+// // echo($photo);
 
 
 ?>
 
-<!DOCTYPE HTML>
+<!-- <!DOCTYPE HTML>
 <html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -34,4 +66,4 @@ echo($showName);
 	<body>
 	<p>Спасибо за вклад в развитие музея!</p>
 	</body>
-</html>
+</html> -->
