@@ -3,7 +3,7 @@
 		<a class="popClose" href="#" style="text-decoration: none; cursor: pointer;">❌</a>
 		<div class="popContent">
 			<h2 class="popTitle">Добавить материал</h2>
-			<form action="send.php" method="post" enctype="multipart/form-data">
+			<!-- <form action="send.php" method="post" enctype="multipart/form-data">
 				<div class="formItem">
 					<input placeholder="Имя" type="text" name="name" class="textInput" required/>
 				</div>
@@ -35,10 +35,15 @@
 							</label>
 					</div>
 					<p style="margin-top: 15px;">
-						<button class="sentForm" type="submit" name="submit">Отправить</button>
+						<button class="sentForm" type="submit">Отправить</button>
 					</p>
 				</div>
-			</form>
+			</form> -->
+			<form action="send.php" method="POST">
+    <input type="text" name="name" placeholder="Ваше имя">
+    <input type="text" name="phone" placeholder="Ваш телефон">
+    <input type="submit" class="btn" >
+</form>
 		</div>
 	</div>
 </div>
