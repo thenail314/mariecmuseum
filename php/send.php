@@ -23,7 +23,7 @@ echo($showName);
 <html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta http-equiv="refresh" content="3; url=index.php">
+	<meta http-equiv="refresh" content="3; url=../index.php">
 	<title>Форма отправлена</title>
 	<meta name="generator">
 	<script type="text/javascript">
