@@ -7,10 +7,13 @@ $message = $_POST['message'];
 $showName = $_POST['showName'];
 // $photo = $_POST['photo'];
 
-echo($name"\n");
-echo($surname"\n");
-echo($message"\n");
-echo($showName"\n");
+echo($name);
+echo "<br>";
+echo($surname);
+echo "<br>";
+echo($message);
+echo "<br>";
+echo($showName);
 // echo($photo);
 
 
