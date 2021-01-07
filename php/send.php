@@ -2,12 +2,16 @@
 
 
 $name = $_POST['name'];
-$subname = $_POST['subname'];
+$surname = $_POST['surname'];
 $message = $_POST['message'];
 $showName = $_POST['showName'];
+$photo = $_POST['showName'];
 
 echo($name);
-echo($subname);
+echo($surname);
+echo($message);
+echo($showName);
+echo($showName);
 
 
 ?>
@@ -20,11 +24,11 @@ echo($subname);
 	<title>Форма отправлена</title>
 	<meta name="generator">
 	<script type="text/javascript">
-	setTimeout('location.replace("/index.php")', 3000);
+	setTimeout('location.replace("/index.php")', 5000);
 	/*Изменить текущий адрес страницы через 3 секунды (3000 миллисекунд)*/
 	</script> 
 	</head>
 	<body>
-	<h1>Спасибо за вклад в развитие музея!</h1>
+	<p>Спасибо за вклад в развитие музея!</p>
 	</body>
 </html>
