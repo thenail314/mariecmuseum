@@ -1,36 +1,14 @@
 <?php
 
-require_once('phpmailer/PHPMailerAutoload.php');
-$mail = new PHPMailer;
-$mail->CharSet = 'utf-8';
 
 $name = $_POST['name'];
 $subname = $_POST['subname'];
 $message = $_POST['message'];
 $showName = $_POST['showName'];
 
-$mail->isSMTP();
-$mail->Host = 'ssl://smtp.yandex.ru';
-$mail->Username = 'mariecmuseum@yandex.ru';
-$mail->Password = 'P1ssw0rD';
-$mail->SMTPAuth = true;
-$mail->SMTPSecure = 'ssl';
-$mail->Port = 465;
+echo($name);
+echo($subname);
 
-// От кого
-$mail->setFrom('mariecmuseum@yandex.ru');		
-// Кому
-$mail->addAddress('thenail314@yandex.ru');
-
-$mail->isHTML(true);
-
-$mail->Subject = 'Заявка с тестового сайта';
-$mail->Body    = '' .$name . ' ' .$subname . ' оставил заявку, его телефон ' .$phone. '<br>Сообщение: ' .$message;
-$mail->AltBody = '';
-
-if(!$mail->send()) {
-    echo 'Error';
-}
 
 ?>
 
