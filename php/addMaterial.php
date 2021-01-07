@@ -35,7 +35,7 @@
 							</label>
 					</div>
 					<p style="margin-top: 15px;">
-						<button class="sentForm" type="submit">Отправить</button>
+						<button class="sentForm" type="submit" name="submit">Отправить</button>
 					</p>
 				</div>
 			</form>
