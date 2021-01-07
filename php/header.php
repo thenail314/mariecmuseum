@@ -6,7 +6,7 @@
 				<img src="../img/menuIcon.svg" class="menuButton" id="menuButton">
 			</a>
 
-			<a href="../index.php" class="linkToMainPage">
+			<a href="index.php" class="linkToMainPage">
 				<img src="../img/logoMini.png" class="logoCenter" id="menuButton">
 			</a>
 		<img src="../img/menuIcon.svg" class="menuButton2" id="menuIcon">
@@ -15,11 +15,11 @@
 			</div>
 
 			<ul class="menu" id="menu">
-				<li><a href="../index.php">главная</a></li>
+				<li><a href="index.php">главная</a></li>
 				<li style="position: relative; cursor: pointer;"><a>список залов &#8595;</a>
 					<ul class="subMenu">
 						<li><a href="zal1.php">от николаевской хрустальной фабрики до стеклозавода мариец</a></li>
-						<li><a href="#">версты победы</a></li>
+						<li><a href="##">версты победы</a></li>
 						<li><a href="#">школа вчера и сегодня</a></li>
 						<li><a href="#">церковь николая чудотворца</a></li>
 					</ul>
@@ -38,7 +38,7 @@
 	<div id="box" style="display: none;">
 		<hr class="line">
 			<ul class="menu" style="display: flex; flex-direction: column; align-items: center;">
-				<li><a href="../index.php">главная</a></li>
+				<li><a href="index.php">главная</a></li>
 				<li style="position: relative; cursor: pointer;"><a>список залов &#8595;</a>
 					<ul class="subMenu">
 						<li><a href="zal1.php">от николаевской хрустальной фабрики до стеклозавода мариец</a></li>
