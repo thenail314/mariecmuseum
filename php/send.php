@@ -1,7 +1,13 @@
 <?php
 
 require_once '/PHPMailer/PHPMailerAutoload.php';
- 
+
+$name = $_POST['name'];
+$surname = $_POST['surname'];
+$message = $_POST['message'];
+$showName = $_POST['showName'];
+// $photo = $_POST['photo'];
+
 $mail = new PHPMailer;
 $mail->CharSet = 'UTF-8';
  
@@ -31,6 +37,15 @@ $mail->msgHTML($body);
 // $mail->addAttachment(__DIR__ . '/image.jpg');
  
 $mail->send();
+
+echo($name);
+echo "<br>";
+echo($surname);
+echo "<br>";
+echo($message);
+echo "<br>";
+echo($showName);
+// echo($photo);
 
 // $name = $_POST['name'];
 // $surname = $_POST['surname'];
