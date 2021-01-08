@@ -8,7 +8,6 @@ $mail->CharSet = 'UTF-8';
 // Настройки SMTP
 $mail->isSMTP();
 $mail->SMTPAuth = true;
-$mail->SMTPDebug = 0;
  
 $mail->Host = 'ssl://smtp.yandex.ru';
 $mail->Port = 465;
@@ -22,14 +21,14 @@ $mail->setFrom('mariecmuseum@yandex.ru', 'mariecmuseum');
 $mail->addAddress('thenail314@yandex.ru', 'Наиль Набиев');
  
 // Тема письма
-$mail->Subject = $subject;
+$mail->Subject = 'test';
  
 // Тело письма
-$body = '<p><strong>«Hello, world!» </strong></p>';
+$body = 'Hello, world!';
 $mail->msgHTML($body);
  
 // Приложение
-$mail->addAttachment(__DIR__ . '/image.jpg');
+// $mail->addAttachment(__DIR__ . '/image.jpg');
  
 $mail->send();
 
