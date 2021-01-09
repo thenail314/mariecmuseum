@@ -91,13 +91,15 @@
 						<div class="select">
 							<span class="choose">
 								<label>
-									<input checked type="radio" name="showName" value="showMyName"/> да</span>
+									<input checked type="radio" name="showName" value="yes"/> да
 								</label>
+							</span>
 
 							<span class="choose">
 								<label>
-									<input type="radio" name="showName" value="hideMyName"/> нет</span>
+									<input type="radio" name="showName" value="no"/> нет
 								</label>
+							</span>
 						</div>
 						<p style="margin-top: 15px;">
 							<button class="sentForm" type="submit">Отправить</button>
