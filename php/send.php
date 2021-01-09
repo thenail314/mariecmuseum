@@ -8,6 +8,7 @@ $name = $_POST['name'];
 $surname = $_POST['surname'];
 $message = $_POST['message'];
 $showName = $_POST['showName'];
+$photo = $_POST['photo']; // new
 
 //$mail->SMTPDebug = 3;
 
@@ -21,7 +22,7 @@ $mail->Port = 465;
 
 $mail->setFrom('mariecmuseum@yandex.ru'); // отправитель
 $mail->addAddress('thenail314@yandex.ru');     // получатель 
-//$mail->addAttachment('/var/tmp/file.tar.gz');         // Вложения
+$mail->addAttachment(''.$photo . ''); // new
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Название вложения
 $mail->isHTML(true);
 
