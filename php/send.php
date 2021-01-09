@@ -4,7 +4,7 @@ require_once('../phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
-$name = $_POST['name'];
+$firstname = $_POST['$firstname'];
 $surname = $_POST['surname'];
 $message = $_POST['message'];
 $showName = $_POST['showName'];
