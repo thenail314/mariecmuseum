@@ -70,7 +70,7 @@
 				<h2 class="popTitle">Добавить материал</h2>
 				<form action="php/send.php" method="POST" enctype="multipart/form-data">
 					<div class="formItem">
-						<input placeholder="Имя" type="text" name="name" class="textInput" required/>
+						<input placeholder="Имя" type="text" name="firstname" class="textInput" required/>
 					</div>
 
 					<div class="formItem">
