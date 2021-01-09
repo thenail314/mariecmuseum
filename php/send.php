@@ -23,20 +23,22 @@ $mail->setFrom('mariecmuseum@yandex.ru'); // отправитель
 $mail->addAddress('thenail314@yandex.ru');     // получатель 
 if(isset($_FILES['photo'])) { 
                 if($_FILES['photo']['error'] == 0){ 
-                        $mail->AddAttachment($_FILES['photo']['tmp_name'], $_FILES['photo']['name']); 
-                }
-                
-                if($_FILES['photo'] > 1 {
-                    $mail->AddAttachment($_FILES['photo']['tmp_name'], $_FILES['photo']['name']); 
-                    $mail->AddAttachment($_FILES['photo']['tmp_name'], $_FILES['photo']['name']); 
-                    $mail->AddAttachment($_FILES['photo']['tmp_name'], $_FILES['photo']['name']); 
-                    $mail->AddAttachment($_FILES['photo']['tmp_name'], $_FILES['photo']['name']); 
-                    $mail->AddAttachment($_FILES['photo']['tmp_name'], $_FILES['photo']['name']); 
-                    $mail->AddAttachment($_FILES['photo']['tmp_name'], $_FILES['photo']['name']); 
-                    $mail->AddAttachment($_FILES['photo']['tmp_name'], $_FILES['photo']['name']); 
-                    $mail->AddAttachment($_FILES['photo']['tmp_name'], $_FILES['photo']['name']); 
-                    $mail->AddAttachment($_FILES['photo']['tmp_name'], $_FILES['photo']['name']); 
-                    $mail->AddAttachment($_FILES['photo']['tmp_name'], $_FILES['photo']['name']);   
+//                         $mail->AddAttachment($_FILES['photo']['tmp_name'], $_FILES['photo']['name']);
+                  if  (is_array( $_FILES['photo'] )) {
+
+    foreach ($_FILES['photo'] as $_FILES['photo'] ) {
+
+        $mail->addAttachment($_FILES['photo']['tmp_name'], $_FILES['photo']['name']); 
+
+        var_dump($_FILES['photo']['tmp_name'], $_FILES['photo']['name']);
+        echo '<br/>';  
+
+        var_dump($mail->addAttachment($_FILES['photo']['tmp_name'], $_FILES['photo']['name']);
+        echo '<br/>'; 
+    }
+
+     die();
+}
                 }
          } 
 $mail->isHTML(true);
