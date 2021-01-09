@@ -24,25 +24,25 @@ $mail->addAddress('thenail314@yandex.ru');     // получатель
 $mail->isHTML(true);
 $mail->Subject = ''.$name . ' ' .$surname .' оставил заявку, его сообщение:';
 
-// if (!empty($_FILES['photo']['name'][0])) {
-//             foreach ($_FILES['photo']['name'] as $key => $value) {
-//                 $out_files[] = array("name"=>$_FILES['photo']['name'][$key], "tmp_name" => $_FILES['photo']['tmp_name'][$key]);
-//             }
-//             $filesSend = true;
-//         } else {
-//             $filesSend = false;    
-//         }
-//         if ($filesSend) {
-//             foreach ($out_files as $k=>$v) {
-//                 $mail->AddAttachment($out_files[$k]['tmp_name'], $out_files[$k]['name']);
-//             }
-//         }
+if (!empty($_FILES['photo']['name'][0])) {
+            foreach ($_FILES['photo']['name'] as $key => $value) {
+                $out_files[] = array("name"=>$_FILES['photo']['name'][$key], "tmp_name" => $_FILES['photo']['tmp_name'][$key]);
+            }
+            $filesSend = true;
+        } else {
+            $filesSend = false;    
+        }
+        if ($filesSend) {
+            foreach ($out_files as $k=>$v) {
+                $mail->AddAttachment($out_files[$k]['tmp_name'], $out_files[$k]['name']);
+            }
+        }
 
-if(isset($_FILES['photo'])) { 
-                if($_FILES['photo']['error'] == 0){ 
-                        $mail->AddAttachment($_FILES['photo']['tmp_name'], $_FILES['photo']['name']); 
-                } 
-         } 
+// if(isset($_FILES['photo'])) { 
+//                 if($_FILES['photo']['error'] == 0){ 
+//                         $mail->AddAttachment($_FILES['photo']['tmp_name'], $_FILES['photo']['name']); 
+//                 } 
+//          } 
 
 $mail->Body    = ''.$message.'<br><br>Показать имя: ' .$showName;
 $mail->AltBody = '';
