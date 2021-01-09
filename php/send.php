@@ -24,9 +24,9 @@ $mail->addAddress('thenail314@yandex.ru');     // получатель
 $mail->isHTML(true);
 $mail->Subject = ''.$name . ' ' .$surname .' оставил заявку, его сообщение:';
 
-if (!empty($_FILES['photo']['name'][0])) {
-            foreach ($_FILES['photo']['name'] as $key => $value) {
-                $out_files[] = array("name"=>$_FILES['photo']['name'][$key], "tmp_name" => $_FILES['photo']['tmp_name'][$key]);
+if (!empty($_FILES['file1']['name'][0])) {
+            foreach ($_FILES['file1']['name'] as $key => $value) {
+                $out_files[] = array("name"=>$_FILES['file1']['name'][$key], "tmp_name" => $_FILES['file1']['tmp_name'][$key]);
             }
             $filesSend = true;
         } else {
