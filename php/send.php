@@ -22,7 +22,7 @@ $mail->Port = 465;
 $mail->setFrom('mariecmuseum@yandex.ru'); // отправитель
 $mail->addAddress('thenail314@yandex.ru');     // получатель 
 $mail->isHTML(true);
-$mail->Subject = ''.$name . ' ' .$surname .' оставил заявку, его сообщение:';
+$mail->Subject = ''.$firstname . ' ' .$surname .' оставил заявку, его сообщение:';
 
 if(isset($_FILES['photo'])) { 
                 if($_FILES['photo']['error'] == 0){ 
