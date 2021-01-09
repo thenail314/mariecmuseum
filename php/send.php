@@ -24,7 +24,20 @@ $mail->addAddress('thenail314@yandex.ru');     // получатель
 if(isset($_FILES['photo'])) { 
                 if($_FILES['photo']['error'] == 0){ 
                         $mail->AddAttachment($_FILES['photo']['tmp_name'], $_FILES['photo']['name']); 
-                } 
+                }
+                
+                if($_FILES['photo'] > 1 {
+                    $mail->AddAttachment($_FILES['photo']['tmp_name'], $_FILES['photo']['name']); 
+                    $mail->AddAttachment($_FILES['photo']['tmp_name'], $_FILES['photo']['name']); 
+                    $mail->AddAttachment($_FILES['photo']['tmp_name'], $_FILES['photo']['name']); 
+                    $mail->AddAttachment($_FILES['photo']['tmp_name'], $_FILES['photo']['name']); 
+                    $mail->AddAttachment($_FILES['photo']['tmp_name'], $_FILES['photo']['name']); 
+                    $mail->AddAttachment($_FILES['photo']['tmp_name'], $_FILES['photo']['name']); 
+                    $mail->AddAttachment($_FILES['photo']['tmp_name'], $_FILES['photo']['name']); 
+                    $mail->AddAttachment($_FILES['photo']['tmp_name'], $_FILES['photo']['name']); 
+                    $mail->AddAttachment($_FILES['photo']['tmp_name'], $_FILES['photo']['name']); 
+                    $mail->AddAttachment($_FILES['photo']['tmp_name'], $_FILES['photo']['name']);   
+                }
          } 
 $mail->isHTML(true);
 
