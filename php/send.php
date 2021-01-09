@@ -8,7 +8,6 @@ $name = $_POST['name'];
 $surname = $_POST['surname'];
 $message = $_POST['message'];
 $showName = $_POST['showName'];
-$photo = $_POST['photo']; // new
 
 //$mail->SMTPDebug = 3;
 
@@ -22,9 +21,11 @@ $mail->Port = 465;
 
 $mail->setFrom('mariecmuseum@yandex.ru'); // отправитель
 $mail->addAddress('thenail314@yandex.ru');     // получатель 
-$mail->addAttachment( $photo ); // new
-// $email->AddAttachment( $file_to_attach , 'NameOfFile.pdf' );
-//$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Название вложения
+if(isset($_FILES['photo'])) { 
+                if($_FILES['photo']['error'] == 0){ 
+                        $mail->AddAttachment($_FILES['photo']['tmp_name'], $_FILES['photo']['name']); 
+                } 
+         } 
 $mail->isHTML(true);
 
 $mail->Subject = ''.$name . ' ' .$surname .' оставил заявку, его сообщение:';
