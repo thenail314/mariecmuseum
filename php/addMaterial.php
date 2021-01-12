@@ -24,7 +24,7 @@
 					<hr style="border: none; background-color: #333; height: 1px; width: 70%; margin: auto;">
 					<p style="margin-bottom: 15px;">Указать ваше имя на сайте?</p>
 					<div class="select">
-						<span class="choose">
+						<span class="choose" style="margin-right: 7px;">
 							<label>
 								<input checked type="radio" name="showName" value="yes"/> да
 							</label></span>
