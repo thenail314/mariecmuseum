@@ -82,14 +82,15 @@
 					</div>
 
 					<div>
-						<input class="" type="file" name="photo" multiple style="margin: 10px;"/>
+						<input class="" type="file" name="photo" multiple style="margin: 9px;"/>
+						<p style="font-size: 10px; text-align: center; margin-bottom: 2px;">Прикрепите .zip архив <br> c фото или прочим материалом</p>
 					</div>
 
 					<div class="total">
 						<hr style="border: none; background-color: #333; height: 1px; width: 70%; margin: auto;">
 						<p style="margin-bottom: 15px;">Указать ваше имя на сайте?</p>
 						<div class="select">
-							<span class="choose" style="margin-right: 7px;">
+							<span class="choose" style="margin-right: 5px;">
 								<label>
 									<input checked type="radio" name="showName" value="yes"/> да
 								</label>
