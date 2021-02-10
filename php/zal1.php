@@ -44,12 +44,12 @@
 	<div class="container">
 		<a href="lamp.php"><div class="card">
 			<img src="../img/lamp.jpg">
-			<p>Лампа 1</p>
+			<p>Керосиновая лампа</p>
 		</div></a>
 
-		<a href=""><div class="card">
+		<a href="lamp.php"><div class="card">
 			<img src="../img/lamp2.jpg">
-			<p>Лампа 2</p>
+			<p>Керосиновая лампа</p>
 		</div></a>
 	</div>
 </body>
