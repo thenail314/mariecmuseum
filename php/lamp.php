@@ -11,14 +11,14 @@
 	<link rel="stylesheet" type="text/css" href="../css/slider.css">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Лампа без названия | Музей п. Мариец</title>
+	<title>Керосиновая лампа | Музей п. Мариец</title>
 </head>
 <body>
 	<?php include 'header.php';?>
 	<?php include 'addMaterial.php';?>
 
 	<div class="top">
-		<p class="zagolovok">лампа без названия</p>
+		<p class="zagolovok">Керосиновая лампа</p>
 	</div>
 
 	<div class="container">
@@ -51,9 +51,9 @@
 		</div>
 		
 		<div class="description">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat diam nibh, in venenatis nisi volutpat vitae. Curabitur lobortis pellentesque fringilla. Vestibulum dictum turpis ac nisi scelerisque, accumsan ornare ligula ultrices. Suspendisse sapien tortor, fermentum nec nulla sit amet, condimentum sodales ipsum. Pellentesque non velit arcu. In vestibulum suscipit lectus eget consequat. Pellentesque in sem elit. Cras non libero ut velit vulputate malesuada ac et augue. Suspendisse potenti. Etiam laoreet lacinia quam ac interdum. Integer nunc nibh, commodo id iaculis in, rutrum vulputate odio. Suspendisse potenti.</p>
+			<p>Ламповое стекло произведено на Ульяновском стеклозаводе.</p>
 			<br>
-			<p>Sed cursus quam quis luctus venenatis. Nulla aliquet ligula lorem, ut dignissim augue dictum ut. Etiam viverra enim id risus pulvinar, vitae faucibus massa rhoncus. Nam metus neque, egestas vitae dignissim quis, aliquet et ipsum. Etiam tristique eget felis sit amet consequat. Vivamus eu arcu quam. In porta turpis velit, ut scelerisque magna sollicitudin et. Donec id varius lorem. Donec non lorem ipsum. Curabitur malesuada ligula eget libero rhoncus, in auctor tellus pharetra. Curabitur ex neque, pretium sit amet tellus a, malesuada euismod mi.</p>
+			<p>Описание не завершено.</p>
 
 			<br>
 			<a id="lookAt3D" href="###">3D просмотр (пока недоступно)</a>	
