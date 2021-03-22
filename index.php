@@ -129,7 +129,7 @@
 		<img src="img/logoBeta.png" class="logo">
 	<div class="top">
 		<p class="zagolovok">виртуальный музей поселка мариец</p>
-		<p class="slogan">Гордимся мы историей своей,<br>А сохранить ее поможет наш музей</p>
+		<p class="slogan" style="color: #565656; background-color: blue;">Гордимся мы историей своей,<br>А сохранить ее поможет наш музей</p>
 	</div>
 	</div>
 
